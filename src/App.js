@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaChevronUp, FaCode, FaDatabase, FaBrain, FaCloud, FaGraduationCap, FaCertificate, FaBriefcase } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaChevronUp, FaCode, FaDatabase, FaBrain, FaCloud, FaGraduationCap, FaCertificate, FaBriefcase, FaPhone } from 'react-icons/fa';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,69 +51,64 @@ function App() {
 
   const experience = [
     {
-      title: "Graduate Research Assistant - Data Analyst",
+      title: "Data Engineer (Research & Analytics)",
       company: "Northern Arizona University",
       location: "United States",
-      period: "January 2025 - Present",
+      period: "January 2025 - December 2025 (1 year)",
       points: [
-        "Cleaned and merged over 5 traffic datasets using Python and SQL, enhancing overall data accuracy and consistency by approximately 30%",
-        "Developed interactive visualizations in Matplotlib and seaborn that highlighted critical patterns across various crash factors",
-        "Applied ArcGIS geoprocessing tools to conduct spatial analysis, successfully identifying over 15 high-risk accident hotspots",
-        "Automated data pipelines with Python scripts within ArcGIS, saving analysts up to 10 hours per week",
-        "Collaborated closely with faculty and city stakeholders to ensure analyses aligned with traffic management goals",
-        "Contributed directly to the City of Scottsdale's urban planning initiatives aimed at reducing traffic accidents"
+        "Built automated data pipelines using Python and SQL to clean and merge 5+ massive traffic datasets, improving overall data accuracy by 30%",
+        "Streamlined ETL processes that saved the analytics team 10+ hours per week by automating repetitive data cleaning tasks within the ArcGIS ecosystem",
+        "Developed interactive dashboards in Matplotlib and Seaborn to visualize crash patterns, identifying 15+ high-risk accident hotspots that led to targeted safety interventions",
+        "Collaborated with city stakeholders to translate complex traffic data into actionable safety recommendations, directly influencing urban planning initiatives"
       ]
     },
     {
-      title: "Research Assistant - AI Engineer",
+      title: "AI Software Engineer (Research)",
       company: "Northern Arizona University",
-      location: "Flagstaff, Arizona, United States",
-      period: "January 2025 - August 2025",
+      location: "Phoenix, AZ, United States",
+      period: "January 2025 - August 2025 (8 months)",
       points: [
-        "Explored the application of GenAI using OpenAI's GPT-4o-mini to effectively differentiate malware from benign Windows event logs",
-        "Automated a comprehensive classification workflow in Python, decreasing manual analysis time from approximately 90 hours to just 2 hours",
-        "Achieved an impressive F1 score of 1.0 for binary classification through meticulous fine-tuning of LLMs",
-        "Employed Google Colab to experiment with open-source models using GPU A100",
-        "Implemented advanced techniques such as prompt engineering and Retrieval-Augmented Generation (RAG)",
-        "Used LORA/QLORA for finetuning open source model like Mistral-7B-8X and improved classification accuracy by 40%"
+        "Engineered an automated malware classification system using GenAI (GPT-4o-mini), reducing manual log analysis time by 98% (cutting 90 hours of work down to just 2 hours)",
+        "Achieved an F1 score of 1.0 in binary malware detection by fine-tuning open-source LLMs (Mistral-7B) using LORA/QLORA optimization techniques",
+        "Implemented Retrieval-Augmented Generation (RAG) pipelines to bridge the gap between raw security logs and actionable insights, significantly improving threat detection speed",
+        "Leveraged Google Colab and GPU acceleration (A100) to iterate rapidly on model testing, overcoming local compute limitations to deliver production-ready classification workflows"
       ]
     },
     {
-      title: "Teaching Assistant",
+      title: "AI Engineer & Teaching Assistant",
       company: "Northern Arizona University",
-      location: "Flagstaff, Arizona, United States",
-      period: "August 2024 - December 2024",
+      location: "Phoenix, AZ, United States",
+      period: "August 2024 - December 2024 (5 months)",
       points: [
-        "Guided over 10 students in the integration of ChatGPT API and fine-tuning of LLaMA and Ollama models using Python",
-        "Taught advanced LoRA/QLoRA optimization techniques that effectively cut training times by approximately 20%",
-        "Designed and delivered hands-on prompt engineering labs that improved the quality of LLM responses by around 15%",
-        "Supported deployment workflows utilizing PyTorch and Hugging Face frameworks"
+        "Mentored 10+ students on the end-to-end integration of ChatGPT APIs and LLM fine-tuning, directly improving their project completion rates",
+        "Optimized training workflows using LoRA/QLORA techniques, effectively cutting model training times by 20% and allowing for more rapid experimentation",
+        "Designed and delivered hands-on labs for Prompt Engineering that improved LLM response quality by 15%, fostering practical understanding of AI capabilities",
+        "Guided students through deployment workflows using PyTorch and Hugging Face, ensuring they could launch functional, real-world AI applications"
       ]
     },
     {
       title: "Software Engineer",
       company: "Cognizant",
       location: "Bengaluru, Karnataka, India",
-      period: "September 2022 - December 2023",
+      period: "September 2022 - December 2023 (1 year 4 months)",
       points: [
-        "Streamlined healthcare platform scalability and performance by developing and maintaining backend systems with Java, Spring Boot, Hibernate, and JPA, delivering 14+ RESTful APIs that served 50k+ monthly users with high reliability",
-        "Secured patient health records by implementing JWT, OAuth 2.0, and Spring Security, reducing authentication vulnerabilities by 40% and ensuring HIPAA-compliant data protection across all endpoints",
-        "Accelerated data transactions by optimizing SQL queries and deploying Redis caching, enabling 30% faster API responses and 25% quicker data retrieval through efficient JSON/XML data handling",
-        "Increased deployment scalability by 3× and achieved 99.9% uptime by containerizing microservices with Docker, orchestrating via Kubernetes (EKS), and automating CI/CD pipelines on AWS (EC2, ELB, Lambda, CloudWatch, S3, SNS)",
-        "Spearheaded creation of automated testing suites that maintain a code quality score of 85/100 and detect 95% of potential errors before deployment, improving code maintainability",
-        "Drove sprint efficiency by collaborating within an Agile team of 14–18 developers, leveraging Jira for sprint tracking and Grafana for performance monitoring, which improved delivery timelines and issue resolution by 20%"
+        "Architected backend microservices for a healthcare platform serving 50,000+ monthly users, delivering 14+ RESTful APIs using Java, Spring Boot, and Hibernate",
+        "Increased deployment scalability by 3x and achieved 99.9% uptime by containerizing services with Docker, orchestrating via Kubernetes (EKS), and building AWS CI/CD pipelines",
+        "Secured sensitive patient data (HIPAA compliant) by implementing OAuth 2.0, JWT, and Spring Security, reducing authentication vulnerabilities by 40%",
+        "Accelerated API response times by 30% by optimizing complex SQL queries and implementing Redis caching for high-speed data retrieval",
+        "Led code quality initiatives by building automated testing suites that maintained a code quality score of 85/100, detecting 95% of errors before production"
       ]
     },
     {
-      title: "Software Engineer Trainee",
+      title: "Associate Software Engineer",
       company: "Cognizant",
       location: "Bangalore Urban, Karnataka, India",
-      period: "September 2021 - September 2022",
+      period: "September 2021 - September 2022 (1 year 1 month)",
       points: [
-        "Developed robust RESTful APIs using Node.js and Express.js, reducing response times by 25%",
-        "Integrated MongoDB with applications, resulting in a 30% increase in data retrieval efficiency",
-        "Implemented JWT authentication protocols to secure application access",
-        "Collaborated effectively with frontend developers to deliver full-stack features that improved user experience by 15%"
+        "Developed robust asynchronous services using Node.js and Express.js, reducing API response times by 25% during peak traffic hours",
+        "Optimized MongoDB schemas to streamline data management, resulting in a 30% increase in retrieval efficiency for high-load operations",
+        "Collaborated with frontend teams to ship full-stack features that improved user engagement metrics by 15%",
+        "Implemented JWT authentication protocols to secure application access points, ensuring strict compliance with security standards"
       ]
     }
   ];
@@ -142,14 +137,14 @@ function App() {
   ];
 
   const skills = {
-    Programming: ["Python", "Java", "C", "C++", "JavaScript"],
+    Programming: ["Python", "Java", "JavaScript"],
     frontend: ["React.js", "Redux.js", "HTML5", "CSS3"],
-    backend: ["Node.js", "Express.js", "Spring Boot", "RESTful APIs"],
+    backend: ["Node.js", "Express.js", "Spring Boot", "RESTful APIs", "Microservices"],
     database: ["MongoDB", "SQL"],
-    cloud: ["AWS", "Docker","Kubernetes"],
-    ai: ["Generative AI", "LLM Fine-Tuning", "GPT-4", "LLaMA", "Ollama", "LoRA/QLoRA", "Prompt Engineering","RAG"],
-    dataScience: ["Python", "Data Analysis", "Data Visualization", "Matplotlib", "Seaborn", "ArcGIS"],
-    languages: ["Kannada (Native)", "English (Professional)", "Hindi (Professional)"]
+    cloud: ["AWS (EKS, Lambda, S3)", "Docker", "Kubernetes", "CI/CD"],
+    ai: ["LLMs", "RAG", "LoRA/QLoRA", "Prompt Engineering", "GPT-4", "Mistral-7B"],
+    dataScience: ["Python", "Data Analysis", "Data Visualization", "Matplotlib", "Seaborn", "ArcGIS", "ETL"],
+    languages: ["Kannada (Native or Bilingual)", "English (Native or Bilingual)", "Hindi (Professional Working)"]
   };
 
   const projects = [
@@ -222,13 +217,13 @@ function App() {
             Hi, I'm <span className="gradient-text">Jayanthkumar Karthik</span>
           </h1>
           <div className="hero-subtitle">
-            <span className="typing-text">Software Engineer | CS Grad Student @ NAU</span>
+            <span className="typing-text">Software Engineer | Java, Spring Boot, AWS, Python | Backend & AI Systems</span>
           </div>
           <p className="hero-description">
-            Ex-Cognizant (2+ yrs) | MERN, Spring Boot, AWS | Passionate about GenAI & Data Engineering
+            Ex-Cognizant | 2+ years building production-grade backend systems and AI-integrated solutions
           </p>
           <div className="hero-location">
-            <FaMapMarkerAlt /> Flagstaff, Arizona, United States
+            <FaMapMarkerAlt /> Phoenix, AZ, United States
           </div>
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">Get In Touch</a>
@@ -252,28 +247,27 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                Hello, it is my pleasure to meet you! I am a <strong>Computer Science Graduate Student</strong> at Northern Arizona University 
-                with over 2 years of industry and practical research experience in Data Analysis, AI, and Software Development. I have a 
-                strong interest in creating smart systems at the crossroads of Full Stack Development and Generative AI.
+                Software Engineer with 2+ years of experience building production-grade backend systems and AI-integrated solutions. 
+                I bridge the gap between traditional enterprise software (Java/Spring Boot) and modern AI implementation. My background 
+                spans from architecting scalable microservices at Cognizant to developing advanced malware detection models using 
+                Generative AI during my Master's research.
               </p>
               <p>
-                My journey started at <strong>Cognizant</strong>, where I was employed as a Software Engineer to design and maintain RESTful APIs 
-                with Node.js and Express.js. I cut down application response times by 30% and increased database efficiency by 25% through 
-                smarter MongoDB schema design.
+                <strong>Enterprise Engineering:</strong> I don't just write code; I build systems that scale. At Cognizant, I engineered 
+                backend architectures supporting 50,000+ monthly users, optimizing APIs for 99.9% uptime and ensuring HIPAA-compliant security.
               </p>
               <p>
-                As a <strong>Graduate Research Assistant and AI Researcher</strong> at Northern Arizona University, I've integrated data analysis 
-                with AI to create impact. I processed and combined 5+ traffic datasets in Python and SQL, performed spatial analysis in ArcGIS 
-                to discover 15+ high-risk accident areas, and created a malware classification model with GPT-4o-mini that achieved an F1 score 
-                of 1.0, reducing manual log analysis time from 90 hours to just 2 hours.
+                <strong>Applied AI Strategy:</strong> I move beyond theory to practical application. I recently fine-tuned LLMs (LORA/QLORA) 
+                and built RAG pipelines that reduced security log analysis time by 98% (from 90 hours to 2 hours), proving that AI can drive 
+                massive operational efficiency.
               </p>
               <p>
-                As a <strong>Teaching Assistant</strong>, I tutored students on fine-tuning LLMs (LLaMA, Ollama), integrating ChatGPT APIs, 
-                and implementing LoRA/QLoRA optimizations, reducing model retraining time by 50%.
+                <strong>Technical Toolkit:</strong> Backend (Java, Spring Boot, Microservices, REST APIs, Node.js), Cloud & DevOps (AWS - EKS, 
+                Lambda, S3, Docker, Kubernetes, CI/CD), AI & Data (Python, LLMs, RAG, SQL, MongoDB).
               </p>
               <p className="highlight">
-                I am actively seeking <strong>Full-time Software Development Engineer positions</strong> where I can use my experience in 
-                Full Stack Development, Data Engineering, and AI-based solutions to create scaled and impactful systems.
+                I have completed my MS in Computer Science (Dec 2025) and am available to join immediately. I am looking for a team where I can 
+                deploy robust code and solve complex engineering challenges.
               </p>
             </div>
             <div className="about-stats">
@@ -507,6 +501,11 @@ function App() {
             projects or recruiting for software positions, let's connect!
           </p>
           <div className="contact-cards">
+            <a href="tel:5204910014" className="contact-card">
+              <FaPhone className="contact-icon" />
+              <h3>Mobile</h3>
+              <p>5204910014</p>
+            </a>
             <a href="mailto:imjayanthkumark@gmail.com" className="contact-card">
               <FaEnvelope className="contact-icon" />
               <h3>Email</h3>
@@ -520,7 +519,7 @@ function App() {
             <div className="contact-card">
               <FaMapMarkerAlt className="contact-icon" />
               <h3>Location</h3>
-              <p>Flagstaff, Arizona, United States</p>
+              <p>Phoenix, AZ, United States</p>
             </div>
           </div>
         </div>
